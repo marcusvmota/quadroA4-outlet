@@ -76,7 +76,7 @@ header {
     margin-top: 30px;
 }
 
-.text-center span {
+.text-center span, .container h3 span {
     color: #730909;
 }
 

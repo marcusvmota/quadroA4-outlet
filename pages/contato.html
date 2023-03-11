@@ -18,8 +18,8 @@
         <a href="#" class="logo"><img src="../assets/logo.png" alt="logo quadroa4"></a>
         <ul class="navmenu">
             <li><a href="../index.html">home</a></li>
-            <li><a href="#">products</a></li>
-            <li><a href="#">about</a></li>
+            <li><a href="../index.html#trending">products</a></li>
+            <li><a href="../index.html#sobre">about</a></li>
             <li><a href="#">contact</a></li>
         </ul>
             <div class="nav-icon">
@@ -28,10 +28,57 @@
                 <a href="#"><i class='bx bx-cart' ></i></a>
             </div>        
     </header>
-
-    <section class="melhores-produtos" id="trending">
-        <div class="text-center">
+    <main>
+        <section class="text" id="trending">
             <h2>Tá com alguma dúvida?<br> <span> Fala com a gente!</span></h2>
+        </section>
+        <div class="box">
+            <form>
+                <label for="inputNome">Nome</label>
+                <input type="text" id="inputNome" required>
+
+                <label for="inputEmail">Email</label>
+                <input type="email" id="inputEmail" required>
+
+                <label for="textAreaMensagem">Mensagem</label>
+                <textarea name="textAreaMensagem" id="textAreaMensagem" rows="5" required></textarea>
+                <div class="enviar">
+                <button>Enviar Mensagem</button>
+                </div>
+            </form>
         </div>
-    </section>
+    </main>
+    <div class="container">
+        <h3>Horários de <span>Funcionamento:</span></h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="red">Seg. á Sex.</td>
+                    <td class="yellow">8h ás 18h</td>
+                </tr>
+                <tr>
+                    <td class="red">Sab. e Dom,</td>
+                    <td class="yellow">Fechado</td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.95030870167!2d-35.886357250634404!3d-7.246495873163888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1e774a5ef5ff%3A0x83906290df67eaf1!2sR.%20Jo%C3%A3o%20Albuquerque%20Santiago%2C%20181%20-%20Catol%C3%A9%2C%20Campina%20Grande%20-%20PB%2C%2058410-532!5e0!3m2!1spt-BR!2sbr!4v1678491971950!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="social">
+            <a href="">
+                <img src="../icones/facebook-app-symbol.svg" alt="">
+            </a>
+            <a href="">
+                <img src="../icones/instagram.svg" alt="">
+            </a>
+            <a href="">
+                <img src="../icones/whatsapp.svg" alt="">
+            </a>
+        </div>
+        <div class="text-wraper">
+            <img src="../assets/logo.png" alt="logo">
+            <p>Copyright © 2023 QuadroA4 Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </html>
