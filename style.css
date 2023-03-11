@@ -129,7 +129,7 @@ header {
     justify-content: center;
     background-color: #F1F1F1;
     padding-block: 66px;
-    
+    margin-bottom: 20px;
 }
 
 .about .text-wraper {
@@ -154,12 +154,13 @@ header {
 }
 
 footer {
-    width: 100vw;
+    max-width: 100vw;
 }
 
 footer iframe {
     width: 100%;
     height: 250px;
+    padding-inline: 20px;
 }
 
 .social {
@@ -178,10 +179,115 @@ footer .text-wraper {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    padding-block: 40px;
+    gap: 10px;
     
 }
 footer .text-wraper img {
-    width: 30px;
-    
+    width: 30px;    
 }
+
+@media screen and (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .main-home {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100vw;
+    }
+    
+    .logo img {
+        max-width: 35px;
+        height: auto;
+    }
+
+    .navmenu a {
+        font-size: 10px;
+    }
+
+    .nav-icon{
+        display: none;
+    }
+
+    .text-center h2 {
+        font-size: 20px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .about {
+        flex-direction: column;
+        padding-inline: 10px;
+    }
+
+    .about .text-wraper {
+        width: 100%;
+        
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    footer {
+        padding-bottom: 10px ;
+     }
+ 
+
+    footer .social img {
+        height: 30px;
+    }
+
+    footer .text-wraper {
+        flex-direction: column;
+    }
+
+    footer .text-wraper p {
+        font-size: 10px;
+        
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+    .main-home {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 100vw;
+    }
+
+    .about {
+        padding-inline: 15px;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .about img {
+       /*  width: 100%; */
+        height: 200px;
+        margin-top: 45px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .main-home {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100vw;
+    }
+}
+
+.about {
+    padding-inline: 15px;
+    align-items: center;
+    gap: 15px;
+}
+
