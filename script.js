@@ -16,10 +16,6 @@ function validarFormulario() {
     return isValid;
 }
 
-
-
-
-
 function enviarFormulario() {
     if (validarFormulario()) {
         enviarParaWhatsapp();
