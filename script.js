@@ -31,7 +31,7 @@ function enviarParaWhatsapp() {
     const email = document.getElementById("inputEmail").value;
     const mensagem = document.getElementById("textAreaMensagem").value;
 
-    const texto = `Nome: ${nome} \nE-mail: ${email} \nMensagem ${mensagem}`;
+    const texto = `Nome: ${nome} \nE-mail: ${email} \nMensagem: ${mensagem}`;
     const textoCodificado = encodeURIComponent(texto);
     const numeroWhatsapp = "5583998518119";
     const url = `https://wa.me/${numeroWhatsapp}?text=${textoCodificado}`;
