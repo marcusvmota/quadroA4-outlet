@@ -191,6 +191,10 @@ footer .text-wraper img {
     width: 30px;    
 }
 
+.invalid {
+    border: 2px solid red;
+}
+
 @media screen and (max-width: 480px) {
 
     header {

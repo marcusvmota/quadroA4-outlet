@@ -33,9 +33,9 @@
             <h2>Tá com alguma dúvida?<br> <span> Fala com a gente!</span></h2>
         </section>
         <div class="box">
-            <form>
+            <form onsubmit="event.preventDefault()">
                 <label for="inputNome">Nome</label>
-                <input type="text" id="inputNome" required>
+                <input type="text" id="inputNome" required minlength="2">
 
                 <label for="inputEmail">Email</label>
                 <input type="email" id="inputEmail" required>
@@ -43,7 +43,7 @@
                 <label for="textAreaMensagem">Mensagem</label>
                 <textarea name="textAreaMensagem" id="textAreaMensagem" rows="5" required></textarea>
                 <div class="enviar">
-                <button>Enviar Mensagem</button>
+                <button onclick="enviarFormulario()">Enviar Mensagem</button>
                 </div>
             </form>
         </div>
@@ -81,4 +81,6 @@
             <p>Copyright © 2023 QuadroA4 Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="../script.js"></script>
+</body>
 </html>
